@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://127.0.0.1:5500/Heart_Trail_Animation/calculator/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./Calculator_files/style.css">
+</head>
+<body>
+  <div id="calculator">
+    <input id="display" readonly="" fdprocessedid="d0360s">
+    <div id="keys">
+      <button onclick="appendToDisplay(&#39;+&#39;)" class="operator-btn" fdprocessedid="ixyguv">+</button>
+      <button onclick="appendToDisplay(&#39;7&#39;)" fdprocessedid="7m5ogf">7</button>
+      <button onclick="appendToDisplay(&#39;8&#39;)" fdprocessedid="9lk2ka">8</button>
+      <button onclick="appendToDisplay(&#39;9&#39;)" fdprocessedid="kq0js">9</button>
+      <button onclick="appendToDisplay(&#39;-&#39;)" class="operator-btn" fdprocessedid="mylljq">-</button>
+      <button onclick="appendToDisplay(&#39;4&#39;)" fdprocessedid="t6por">4</button>
+      <button onclick="appendToDisplay(&#39;5&#39;)" fdprocessedid="8o3ig">5</button>
+      <button onclick="appendToDisplay(&#39;6&#39;)" fdprocessedid="ccektn">6</button>
+      <button onclick="appendToDisplay(&#39;*&#39;)" class="operator-btn" fdprocessedid="fk074p">*</button>
+      <button onclick="appendToDisplay(&#39;1&#39;)" fdprocessedid="9qdgv">1</button>
+      <button onclick="appendToDisplay(&#39;2&#39;)" fdprocessedid="zxh31u">2</button>
+      <button onclick="appendToDisplay(&#39;3&#39;)" fdprocessedid="rbrza">3</button>
+      <button onclick="appendToDisplay(&#39;/&#39;)" class="operator-btn" fdprocessedid="flltg">/</button>
+      <button onclick="appendToDisplay(&#39;0&#39;)" fdprocessedid="lr1biq">0</button>
+      <button onclick="appendToDisplay(&#39;.&#39;)" fdprocessedid="ftrxli">.</button>
+      <button onclick="calculate()" fdprocessedid="9bbrbg">=</button>
+      <button onclick="clearDisplay" class="operator-btn" fdprocessedid="ejwbsn">C</button>
+
+    </div>
+  </div>
+  <script src="./Calculator_files/index.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
